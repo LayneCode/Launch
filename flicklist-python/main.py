@@ -16,10 +16,13 @@
 #
 import webapp2
 
+
+
+
 class MainHandler(webapp2.RequestHandler):
-	
-    def getRandomMovie(self):
-        
+
+    def get(self):
+		
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
