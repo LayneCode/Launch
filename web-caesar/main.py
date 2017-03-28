@@ -3,6 +3,7 @@
 
 import webapp2
 import caesar
+import cgi
 
 def BuildPage(textarea_content):
 
