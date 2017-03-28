@@ -5,9 +5,7 @@ import webapp2
 import caesar
 
 def BuildPage(textarea_content):
-	message = self.request.get("message")
-	rotation = int(self.request.get("rotation"))
-	encrypted_message = caesar.encrypt(message, rotation)
+
 
 	rot_label = "<label>Rotate by:</label>"
 	rotation_input = "<input type='number' name='rotation'/>"
