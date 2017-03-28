@@ -36,7 +36,8 @@ class MainHandler(webapp2.RequestHandler):
 		message = self.request.get("message")
 		rotation = int(self.request.get("rotation"))
 		encrypted_message = caesar.encrypt(message, rotation)
-		content = BuildPage(encrypted_message)
+		escaped_message = cgi.escape(encrypted_message)
+		content = BuildPage(escaped_message)
 		self.response.write(content)
 
 
