@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Build-A-Blog</title>
+        <style type="text/css">
+            .error {
+                color: red;
+            }
+
+            .post-title {
+              font-family: Georgia;
+              font-size: 15px
+            }
+
+            .post-content {
+              font-family: cursive;
+              text-indent: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            <a href="/">Build-A-Bloggers</a>
+        </h1>
+
+        <h3>
+          <a href="/add">add a blog post</a>
+
+        </h3>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
