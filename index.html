@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 style="font-family: Georgia">blog users!</h1>
+
+<ul>
+{% for user in users %}
+<li><a href="/blog/{{ user.username }}">{{ user.username }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}
